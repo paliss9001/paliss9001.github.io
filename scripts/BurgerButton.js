@@ -29,7 +29,7 @@ class BurgerButton {
     onCloseBar = (event) => {
         const element = event.target
 
-        if (element.closest(this.cancelBurgerButtonElement) || element == this.overlayElement) {
+        if (element.closest(this.selectors.cancelBurgerButton) || element == this.overlayElement) {
             this.sidebarElement.classList.remove(this.stateClasses.isActive)
             this.overlayElement.classList.remove(this.stateClasses.isActive)
         }
