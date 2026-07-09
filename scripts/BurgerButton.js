@@ -33,6 +33,7 @@ class BurgerButton {
             this.sidebarElement.classList.remove(this.stateClasses.isActive)
             this.overlayElement.classList.remove(this.stateClasses.isActive)
         }
+
     }
 
     bindEvents() {
