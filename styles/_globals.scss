@@ -25,3 +25,8 @@ a {
     color: currentColor;
 }
 
+*:focus-visible {
+
+  outline: 3px solid var(--rose-500);
+  outline-offset: 2px;
+}
