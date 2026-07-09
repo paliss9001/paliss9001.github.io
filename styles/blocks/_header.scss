@@ -1,0 +1,33 @@
+@use '../helpers/' as *;
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    border-bottom: var(--solid-border);
+
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+    }
+
+    &__overlay {
+        display: none;
+        position: fixed;
+        inset: 0;
+        background: rgba(0,0,0,0.4);
+        z-index: 10;
+
+        &.is-active {
+            display: block;
+        }
+    }
+
+
+    @include tablet-above {
+        @include visually-hidden;
+    }
+
+}
+

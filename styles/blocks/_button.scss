@@ -1,0 +1,15 @@
+@use '../helpers/' as *;
+
+.button {
+    @include text-preset-5-semibold;
+    border-radius: 999px;
+    background-color: transparent;
+    border: 1px solid var(--neutral-400);
+    padding: rem(10) rem(16);
+    color: var(--neutral-900);
+
+    &--accent {
+        background-color: var(--neutral-900);
+        color: var(--sun-50);
+    }
+}

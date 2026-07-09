@@ -1,0 +1,70 @@
+@use '../helpers/' as *;
+
+.welcome {
+    display: flex;
+    flex-flow: column;
+    row-gap: rem(20);
+    width: fluid(390, 322); // CHANGE
+    rotate: 4deg;
+
+    @include mobile {
+        rotate: -2deg;
+    }
+
+    box-shadow: inset 0 0 0 1px rgba(255, 244, 220, 0.12), 0 50px 80px -30px rgba(169, 66, 31, 0.45), 0 20px 40px -20px rgba(194, 90, 46, 0.55);
+    background: radial-gradient(80% 120% at 100% 0%, #e07a3f 0%, #c25a2e 50.24%, #9f3e1d 100%);
+    border-radius: 20px;
+    padding: rem(24);
+
+    &__header {
+        border-top: var(--dashed-border);
+        padding-top: rem(16);
+
+        @include flex-spread-x;
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(8);
+        padding-bottom: rem(58);
+
+        &-description {
+            @include text-preset-5;
+            color: var(--sun-50);
+
+            padding-top: rem(24);
+        }
+
+        &-subtitle {
+            @include text-preset-4-italic;
+            
+            color: var(--sun-200);
+        }
+
+        &-title {
+            @include text-preset-1-italic;
+
+            color: var(--sun-50);
+        }
+    }
+
+    &__footer {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(4);
+    }
+
+    &__label,
+    &__footer-label {
+        @include text-preset-10;
+        
+        color: var(--sun-50);
+    }
+
+    &__footer-value {
+        @include text-preset-4;
+
+        color: var(--sun-50);
+    }
+}

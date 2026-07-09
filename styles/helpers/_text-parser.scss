@@ -1,0 +1,144 @@
+/* Font Imports */
+
+/* Text Preset 1 - Fraunces, Regular */
+@mixin text-preset-1 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.5px;
+}
+
+/* Text Preset 1 (italic) - Fraunces, Italic */
+@mixin text-preset-1-italic {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.5px;
+}
+
+/* Text Preset 2 - Fraunces, Regular */
+@mixin text-preset-2 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: -0.25px;
+}
+
+/* Text Preset 3 - Fraunces, Regular */
+@mixin text-preset-3 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: -0.2px;
+}
+
+/* Text Preset 4 - Fraunces, Regular */
+@mixin text-preset-4 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.1px;
+}
+
+/* Text Preset 4 (italic) - Fraunces, Italic */
+@mixin text-preset-4-italic {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 140%;
+    letter-spacing: -0.1px;
+}
+
+/* Text Preset 5 - Fraunces, Regular */
+@mixin text-preset-5 {
+    font-family: 'Fraunces', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0px;
+}
+
+/* Text Preset 5 (Medium) - DM Sans, Medium */
+@mixin text-preset-5-medium {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0px;
+}
+
+/* Text Preset 5 (SemiBold) - DM Sans, SemiBold */
+@mixin text-preset-5-semibold {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 120%;
+    letter-spacing: 0.3px;
+}
+
+/* Text Preset 6 - DM Mono, Medium */
+@mixin text-preset-6 {
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 2px;
+}
+
+/* Text Preset 7 - DM Sans, Regular */
+@mixin text-preset-7 {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 120%;
+    letter-spacing: 0.4px;
+}
+
+/* Text Preset 8 - DM Mono, Regular */
+@mixin text-preset-8 {
+    font-family: 'DM Mono', monospace;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 2px;
+}
+
+/* Text Preset 9 - DM Mono, Regular */
+@mixin text-preset-9 {
+    font-family: 'DM Mono', monospace;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0px;
+}
+
+/* Text Preset 10 - DM Mono, Regular */
+@mixin text-preset-10 {
+    font-family: 'DM Mono', monospace;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 1px;
+}
+
+/* Text Preset 11 - Fraunces, Medium */
+@mixin text-preset-11 {
+    font-family: 'Fraunces', serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 10px;
+    line-height: 140%;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,43 @@
+@use './helpers/' as *;
+
+:root {
+    --font-fraunces: 'Fraunces';
+    --font-dm-mono: 'Dm Mono';
+    --font-dm-sans: 'Dm Sans';
+
+    --color-text: #02012C;
+
+    --neutral-900: #2B2620;
+    --neutral-800: #3E3428;
+    --neutral-700: #5A4C3C;
+    --neutral-600: #7A6A57;
+    --neutral-400: #E4DED5;
+
+    --neutral-200: #F2EEEA;
+    --neutral-100: #FBF6EF;
+    --neutral-50: #FDFBF7;
+    --neutral-0: #FFFFFF;
+
+    --sun-500: #EDB63A;
+    --sun-300: #F5D98A;
+    --sun-200: #FFDE7A;
+    --sun-50: #FFF4DC;
+
+    --blue-500: #5769C6;
+
+    --terracotta-700: #9F3E1D;
+    --terracotta-600: #B7411B;
+    --terracotta-500: #C25A2E;
+    --terracotta-400: #E07A3F;
+
+    --rose-500: #C04A72;
+
+    --transition-duration: .2s;
+
+    --container-width: #{rem(1440)};
+    --container-padding-x: #{rem(16)};
+
+    --dashed-border: 1px dashed var(--neutral-400);
+    --solid-border: 1px solid var(--neutral-400)
+}
+

@@ -1,0 +1,23 @@
+@use '../helpers/' as *;
+
+.icon {
+    display: inline-flex;
+    align-items: center;
+    column-gap: rem(8);
+
+    &--before::before,
+    &--after::after {
+        content: '';
+
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+    }
+
+    &--sparkle::before,
+    &--sparkle::after {
+        background-image: url('../../assets/images/icon-sparkle.svg');
+        @include square(rem(7.5));
+    }
+}

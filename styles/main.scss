@@ -1,0 +1,21 @@
+@use 'fonts';
+@use 'normalize';
+@use 'variables';
+@use 'utils';
+@use 'globals';
+
+@use './blocks/receipt-component';
+@use './blocks/welcome-component';
+@use './blocks/facility-component';
+
+@use './blocks/weather-component';
+@use './blocks/menu-component';
+
+@use './blocks/hotel';
+@use './blocks/burger-button';
+
+@use './blocks/aside';
+@use './blocks/header';
+@use './blocks/button';
+
+@use './blocks/icon';

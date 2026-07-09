@@ -1,0 +1,120 @@
+@use '../helpers/' as *;
+
+.receipt {
+    display: flex;
+    flex-direction: column;
+    width: fluid(390, 322); // CHANGE
+    row-gap: rem(20);
+    padding: rem(24);
+    border-radius: 20px;
+    rotate: -4deg;
+
+    box-shadow: 0 20px 40px -30px rgba(62, 44, 30, 0.16), 0 16px 30px -20px rgba(62, 44, 30, 0.35), 0 1px 0 0 rgba(0, 0, 0, 0.03);
+    background: var(--neutral-50);
+
+    @include mobile {
+        rotate: -2deg;
+    }
+
+    @include text-preset-10;
+    color: var(--neutral-600);
+
+
+    &__header {
+        border-bottom: var(--dashed-border);
+        padding-bottom: rem(12);
+    }
+
+    &__header-pre {
+        @include flex-spread-x;
+    }
+
+    &__dates {
+        display: flex;
+        column-gap: rem(80); //ADAPT
+        justify-content: center;
+        border-bottom: var(--dashed-border);
+        padding-bottom: rem(20);
+    }
+
+    &__date {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: rem(6);
+
+        &-label {
+            padding-bottom: rem(2);
+        }
+
+        &-value {
+            @include text-preset-2;
+
+            color: var(--neutral-900);
+        }
+
+        &-sub {
+            @include text-preset-7;
+
+            color: var(--neutral-700);
+        }
+    }
+
+    &__number {
+        text-align: end;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(8);
+        padding-bottom: rem(20);
+
+        border-bottom: 1px solid var(--neutral-900);
+    }
+
+    &__item {
+        @include flex-spread-x;
+        @include text-preset-5;
+
+        color: var(--neutral-900);
+
+        &-price {
+            @include text-preset-9;
+        }
+
+        &--gray-font {
+            color: var(--neutral-700)
+        }
+    }
+
+    &__total {
+        @include flex-spread-x;
+    }
+
+    &__footer {
+        @include flex-spread-x;
+    }
+
+    &__title {
+        @include text-preset-4;
+
+        color: var(--neutral-900);
+    }
+
+    &__total {
+        &-label {
+            @include text-preset-8;
+            color: var(--neutral-600);
+        }
+
+        &-value {
+            @include text-preset-3;
+            color: var(--neutral-900);
+        }
+    }
+
+    &__payment-info {
+        @include text-preset-10;
+    }
+}

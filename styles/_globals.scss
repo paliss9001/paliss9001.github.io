@@ -1,0 +1,27 @@
+@use './helpers/' as *;
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral-100);
+}
+
+main {
+    flex-grow: 1;
+}
+
+a,
+button,
+label,
+input,
+textarea,
+select,
+svg * {
+    transition-duration: var(--transition-duration);
+}
+
+a {
+    text-decoration: none;
+    color: currentColor;
+}
+

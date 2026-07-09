@@ -1,0 +1,49 @@
+@use '../helpers/' as *;
+
+.sidebar {
+    max-width: rem(260);
+    width: 100%;
+    background-color: var(--neutral-100);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: rem(16) rem(24);        
+    border-right: var(--solid-border);
+
+    @include tablet {
+        position: fixed;
+        transition-duration: .25s;
+        transform: translateX(-100%);
+        top: 0;
+        left: 0;
+        z-index: 100;
+        max-width: rem(384);
+        width: 100%;
+    }
+
+    @include mobile-s {
+        max-width: 80vw;
+    }
+
+
+    &.is-active {
+        transform: translateX(0);
+    }
+    
+    &__extra {
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(20);
+    }
+
+    &__footer {
+        @include text-preset-10;
+
+        display: flex;
+        flex-direction: column;
+        row-gap: rem(6);
+        color: var(--neutral-600);
+        padding-top: rem(16);
+    }
+}
