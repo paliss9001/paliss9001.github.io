@@ -27,12 +27,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot/final-look.jpg)
+![Screenshot](./screenshot/final-look.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://paliss9001.github.io/)
-- Live Site URL: [Add live site URL here](https://github.com/paliss9001/paliss9001.github.io#)
+- Solution URL: [repo](https://paliss9001.github.io/)
+- Live Site URL: [web address](https://github.com/paliss9001/paliss9001.github.io#)
 
 ## My process
 
@@ -42,4 +42,4 @@ Users should be able to:
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/paliss9001)
+- Frontend Mentor - [username](https://www.frontendmentor.io/profile/paliss9001)
