@@ -31,8 +31,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [repo](https://paliss9001.github.io/)
-- Live Site URL: [web address](https://github.com/paliss9001/paliss9001.github.io#)
+- Solution URL: [repo](https://github.com/paliss9001/paliss9001.github.io)
+- Live Site URL: [web address](https://paliss9001.github.io/)
 
 ## My process
 
