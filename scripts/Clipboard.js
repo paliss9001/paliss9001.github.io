@@ -13,7 +13,7 @@ class Copy {
         const element = event.target.closest(this.selectors.copy)
 
         if (element) {
-            navigator.clipboard.writeText(element.textContent)
+            navigator.clipboard.writeText(element.textContent.trim())
             .then(() => {
                 alert('copied successfully')
             })
