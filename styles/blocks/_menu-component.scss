@@ -5,7 +5,7 @@
     padding-top: rem(16);
     border-top: var(--solid-border);
 
-    &__item {
+    &__link {
         @include flex-spread-x;
         padding: rem(12) rem(10);
         border-radius: 8px;
@@ -31,18 +31,7 @@
             scale: 1.05;
         }
 
-        &-extra {
-            @include square(rem(16));
-            @include text-preset-11;
-            color: #fff;
 
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding-inline: rem(5);
-            background-color: var(--terracotta-600);
-            border-radius: 50%;
-        }
     }
 
     &__logo {
@@ -59,4 +48,16 @@
         flex-direction: column;
     }
 
+    &__notification {
+        @include square(rem(16));
+        @include text-preset-11;
+        color: #fff;
+
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        padding-inline: rem(5);
+        background-color: var(--terracotta-600);
+        border-radius: 50%;
+    }
 }

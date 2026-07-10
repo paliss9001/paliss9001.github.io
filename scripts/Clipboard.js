@@ -6,22 +6,26 @@ class Copy {
     }
 
     constructor() {
-        this.copyElement = document.querySelector(this.selectors.copy)
-        
         this.bindEvents()
     }
 
-    onCopy = () => {
-        const wrapper = this.copyElement.closest(this.selectors.facilityCardValues)
-        
-        const text = wrapper.querySelector(this.selectors.facilityCardValue).textContent
+    onCopy = (event) => {
+        const element = event.target.closest(this.selectors.copy)
 
-        navigator.clipboard.writeText(text)
-        alert('Copied to clipboard')
+        if (element) {
+            navigator.clipboard.writeText(element.textContent)
+            .then(() => {
+                alert('copied successfully')
+            })
+            .catch((err) => {
+                alert('unable to copy', err)
+            })
+        }
+
     }
 
     bindEvents() {
-        this.copyElement.addEventListener('click', this.onCopy)
+        document.addEventListener('click', this.onCopy)
     }
 }
 

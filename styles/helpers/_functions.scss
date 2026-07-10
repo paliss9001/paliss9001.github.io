@@ -1,7 +1,11 @@
 @use 'sass:math';
 
 @function rem($pixels) {
-  @return math.div($pixels, 16) + rem;
+  @if math.is-unitless($pixels) == false {
+    @error "rem() expects a unitless number, got #{$pixels}";
+  }
+
+  @return math.div($pixels, 16) * 1rem;
 }
 
 @function fluid($max: 48, $min: 16) {

@@ -12,11 +12,11 @@ class BurgerButton {
     }
 
     constructor() {
-        this.rootElement = document.querySelector(this.selectors.root)
-        this.overlayElement = this.rootElement.querySelector(this.selectors.overlay)
-        this.sidebarElement = this.rootElement.querySelector(this.selectors.sidebar)
-        this.BurgerButtonElement = this.rootElement.querySelector(this.selectors.BurgerButton)
-        this.cancelBurgerButtonElement = this.rootElement.querySelector(this.selectors.cancelBurgerButton)
+        this.rootElement = document.querySelector(this.selectors?.root)
+        this.overlayElement = this?.rootElement.querySelector(this.selectors.overlay)
+        this.sidebarElement = this?.rootElement.querySelector(this.selectors.sidebar)
+        this.BurgerButtonElement = this?.rootElement.querySelector(this.selectors.BurgerButton)
+        this.cancelBurgerButtonElement = this?.rootElement.querySelector(this.selectors.cancelBurgerButton)
 
         this.bindEvents()
     }
